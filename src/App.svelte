@@ -1,6 +1,10 @@
 <script>
   export let name;
   import GoogleAnalytics from "./GoogleAnalytics.svelte";
+
+  function buttonHandler() {
+    ga("send", "event", "Button", "test", "Test button hit");
+  }
 </script>
 
 <style>
@@ -32,6 +36,7 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
+  <button on:click={buttonHandler}>Click</button>
 </main>
 
 <GoogleAnalytics />
