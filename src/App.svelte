@@ -23,6 +23,7 @@
   );
 
   function buttonHandler() {
+    console.log("send event");
     ga("send", "event", "Button", "test", "Test button hit");
   }
 </script>
