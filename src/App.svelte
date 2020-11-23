@@ -1,6 +1,5 @@
 <script>
   export let name;
-  import GoogleAnalytics from "./GoogleAnalytics.svelte";
 
   function buttonHandler() {
     console.log("send event");
@@ -42,5 +41,3 @@
   </p>
   <button on:click={buttonHandler}>Click</button>
 </main>
-
-<GoogleAnalytics />
