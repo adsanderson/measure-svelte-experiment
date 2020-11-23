@@ -24,7 +24,11 @@
 
   function buttonHandler() {
     console.log("send event");
-    ga("send", "event", "Button", "test", "Test button hit");
+    try {
+      ga("send", "event", "Button", "test", "Test button hit");
+    } catch (error) {
+      console.log("I don't think this will work error");
+    }
   }
 </script>
 
