@@ -24,11 +24,11 @@
   function buttonHandler() {
     console.log("send event");
 
-    //     gtag("event", "new_button_clicked", { new_button: "hi" });
+    gtag("event", "new_button_clicked", { new_button: "hi" });
 
-    //     gtag("event", "button", {
-    //       key: "test a button",
-    //     });
+    gtag("event", "button", {
+      key: "test a button",
+    });
   }
 </script>
 
