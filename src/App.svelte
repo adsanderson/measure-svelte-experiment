@@ -1,4 +1,6 @@
 <script>
+  import Questions from "./Questions.svelte";
+
   export let name;
 
   gtag("config", "G-YF9KGN3BL7", {
@@ -39,11 +41,12 @@
 </style>
 
 <main>
-  <h1>Hello {name}!</h1>
+  <h1>Measure Experiment</h1>
   <p>
     Visit the
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
   <button on:click={buttonHandler}>Click</button>
+  <Questions />
 </main>
