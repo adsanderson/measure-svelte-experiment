@@ -13,8 +13,8 @@
     state: false,
   };
 
-  console.log(!!gtag);
-  if (typeof window !== "undefined" && gtag) {
+  console.log(typeof gtag === "undefined");
+  if (typeof window !== "undefined" && typeof gtag !== "undefined") {
     console.log("set??");
     measureable.state = true;
   }
