@@ -1,5 +1,5 @@
 <script>
-  import Questions from "./Questions.svelte";
+  import Questions from "./components/Questions.svelte";
 
   export let name;
 
