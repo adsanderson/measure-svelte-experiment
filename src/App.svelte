@@ -1,8 +1,14 @@
 <script>
   export let name;
 
+  gtag("config", "G-YF9KGN3BL7", {
+    custom_map: { metric1: "new_button" },
+  });
+
   function buttonHandler() {
     console.log("send event");
+
+    gtag("event", "new_button_clicked", { new_button: "hi" });
 
     gtag("event", "button", {
       key: "test a button",
