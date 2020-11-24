@@ -25,7 +25,6 @@
   name="pizzaOrder"
   method="post"
   on:submit={handleSubmit}>
-  <input type="hidden" name="form-name" value="pizzaOrder" />
   <label>What order did the pizza give to the pineapple?
     <input name="order" type="text" />
   </label>

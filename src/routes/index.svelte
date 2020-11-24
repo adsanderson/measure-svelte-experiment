@@ -57,5 +57,5 @@
     to learn how to build Svelte apps.
   </p>
   <button on:click={buttonHandler}>Click</button>
-  <Questions />
 {/if}
+<Questions />
