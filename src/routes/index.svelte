@@ -13,13 +13,11 @@
     state: false,
   };
 
-  onMount(async () => {
-    console.log(!!gtag);
-    if (gtag) {
-      console.log("set??");
-      measureable.state = true;
-    }
-  });
+  console.log(!!gtag);
+  if (typeof window !== "undefined" && gtag) {
+    console.log("set??");
+    measureable.state = true;
+  }
 
   function buttonHandler() {
     console.log("send event");
@@ -58,4 +56,5 @@
   </p>
   <button on:click={buttonHandler}>Click</button>
 {/if}
+
 <Questions />
