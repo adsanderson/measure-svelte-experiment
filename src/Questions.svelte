@@ -16,9 +16,7 @@
         "form-name": event.target.getAttribute("name"),
         ...name,
       }),
-    })
-      .then(() => navigate("/thank-you/"))
-      .catch((error) => alert(error));
+    }).catch((error) => alert(error));
   }
 </script>
 
